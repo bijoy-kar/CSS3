@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Direction Aware Image Gallery Hover Effects - Simple jQuery Plugin</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #333333;
+		}
+		.container {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 1020px;
+		}
+		.container .box {
+			display: inline-block;
+			position: relative;
+			list-style: none;
+			width: 250px;
+			height: 250px;
+			cursor: pointer;
+		}
+		.container .box.snake {
+			overflow: hidden;
+			position: relative;
+		}
+		.container .box img {
+			width: 100%;
+			height: 100%;
+		}
+		.overlay {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			background: rgba(0, 0, 0, 0.8);
+			top: 0;
+			left: 0;
+		}
+		.overlay h2 {
+			position: absolute;
+			top: 50%;
+			margin: 0;
+			padding: 0;
+			transform: translateY(-50%);
+			color: #ffffff;
+			text-transform: uppercase;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="box snake">
+				<img src="grid1.jpg" alt="">
+				<div class="overlay">
+					<h2>Image Name</h2>
+				</div>
+			</div>
+			<div class="box snake">
+				<img src="grid1.jpg" alt="">
+				<div class="overlay">
+					<h2>Image Name</h2>
+				</div>
+			</div>
+			<div class="box snake">
+				<img src="grid1.jpg" alt="">
+				<div class="overlay">
+					<h2>Image Name</h2>
+				</div>
+			</div>
+			<div class="box snake">
+				<img src="grid1.jpg" alt="">
+				<div class="overlay">
+					<h2>Image Name</h2>
+				</div>
+			</div>
+			<div class="box snake">
+				<img src="grid1.jpg" alt="">
+				<div class="overlay">
+					<h2>Image Name</h2>
+				</div>
+			</div>
+			<div class="box snake">
+				<img src="grid1.jpg" alt="">
+				<div class="overlay">
+					<h2>Image Name</h2>
+				</div>
+			</div>
+			<div class="box snake">
+				<img src="grid1.jpg" alt="">
+				<div class="overlay">
+					<h2>Image Name</h2>
+				</div>
+			</div>
+			<div class="box snake">
+				<img src="grid1.jpg" alt="">
+				<div class="overlay">
+					<h2>Image Name</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/snake.min.js"></script>
+	<script type="text/javascript">
+		$(".snake").snakeify({
+			speed: 200
+		});
+	</script>
+</body>
+</html>
